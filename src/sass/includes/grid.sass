@@ -1,0 +1,56 @@
+.wrap
+  margin: 0 auto
+  width: 85%
+
+$gutter: 5px
+
+.grid-wrap
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+
+.col
+  background-color: red
+  height: 100px
+  margin-bottom: $gutter
+  margin-left: $gutter
+
+.col-1
+  width: 100%
+
+.col-2
+  width: calc(50% - #{$gutter})
+
+.col-3
+  width: calc(33.33% - #{$gutter})
+
+.col-4
+  width: calc(25% - #{$gutter})
+
+.col-5
+  width: calc(20% - #{$gutter})
+
+.col-6
+  width: calc(16.667% - #{$gutter})
+
+.col-7
+  width: calc(14.28% - #{$gutter})
+
+.col-8
+  width: calc(12.5% - #{$gutter})
+
+.col-9
+  width: calc(11.11% - #{$gutter})
+
+.col-10
+  width: calc(10% - #{$gutter})
+
+.col-11
+  width: calc(9.09% - #{$gutter})
+
+.col-12
+  width: calc(8.33% - #{$gutter})
+
+@media (max-width: 460px)
+  .col
+    width: 100%
