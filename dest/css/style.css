@@ -1,14 +1,19 @@
+@font-face {
+  font-family: mainFont;
+  src: url(../media/Fonts/LibreFranklin-Regular.ttf); }
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: mainFont; }
 
 body {
   background: #e0e0e0; }
 
 .wrap {
   margin: 0 auto;
-  width: 85%; }
+  width: 78%; }
 
 .grid-wrap {
   display: -ms-flexbox;
@@ -73,13 +78,64 @@ body {
     list-style: none;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 25%;
+    width: 27%;
     height: 36px;
     -ms-flex-align: center;
     align-items: center; }
     .info-nav .info-nav-list a {
       text-decoration: none;
       color: #000; }
+
+.search-nav {
+  background: #007ec4; }
+  .search-nav .search-nav-flex {
+    display: -ms-flexbox;
+    display: flex;
+    height: 137px;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .search-nav .search-nav-flex .left {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      width: 60%;
+      -ms-flex-align: center;
+      align-items: center; }
+      .search-nav .search-nav-flex .left .logo {
+        width: 250px;
+        margin-right: 50px; }
+      .search-nav .search-nav-flex .left .search-form input {
+        width: 342px;
+        height: 50px; }
+      .search-nav .search-nav-flex .left .search-form button {
+        height: 50px;
+        width: 80px;
+        margin-left: -5px; }
+    .search-nav .search-nav-flex .nav-btns {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 20%; }
+
+.main-nav {
+  background: #005e91;
+  height: 55px; }
+  .main-nav .main-nav-flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 55px; }
+    .main-nav .main-nav-flex a {
+      color: #fff;
+      text-decoration: none; }
 
 .hidden-nav {
   display: none; }
