@@ -25,10 +25,10 @@ $( document ).ready(function() {
             dataResult.value = dataResult.value.toUpperCase();
             console.log(searchInput);
             if (dataResult.value.includes(searchInput)) {
-              data.image = (data.image).val().replace("", '');
-              console.log(dataResult.image);
+              var image = JSON.stringify(dataResult.image);
+              image = image.replace(/\\\//g, '');
               $('.hidden-results').css('display', 'block');
-              html = '<div class="result">' + '<div class="flex-results-left"><img class="image" src="' + dataResult.image + '">' + '<p class="value">' + dataResult.value + '</p>' + '<span class="brand">Brand: ' + dataResult.brand + '</span>' + '<span> | </span> <span class="brand">Weight: ' + dataResult.weight + '</span></div> <div class="flex-results-right"><button class="quote" type="button" name="button">Quote</button><button class="Basket" type="button" name="button">Basket</button> </div></div>';
+              html = '<div class="result">' + '<div class="flex-results-left"><img class="image" src='+image+'>' + '<p class="value">' + dataResult.value + '</p>' + '<div> <span class="brand">Brand: ' + dataResult.brand + '</span>' + '<span> | </span> <span class="brand">Weight: ' + dataResult.weight + '</span></div></div> <div class="flex-results-right"><button class="quote" type="button" name="button">Quote</button><button class="Basket" type="button" name="button">Basket</button> </div></div>';
               $(".hidden-results").append(html);
             }
           });

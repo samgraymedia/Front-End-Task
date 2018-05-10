@@ -133,6 +133,16 @@ body {
     height: 69px;
     margin: 20px 0;
     align-items: center; }
+    .hidden-results .result .flex-results-left {
+      display: flex;
+      position: relative; }
+      .hidden-results .result .flex-results-left .image {
+        width: 70px;
+        height: 55px; }
+      .hidden-results .result .flex-results-left div {
+        position: absolute;
+        bottom: -8px;
+        left: 69px; }
   .hidden-results .flex-results-right {
     display: flex; }
     .hidden-results .flex-results-right button {
