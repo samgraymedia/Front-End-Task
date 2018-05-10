@@ -39,7 +39,12 @@ $( document ).ready(function() {
       });
     },
   });
-
+  $('.menu').on( "click", function() {
+    $(".dropdown-mobile").css("display", "block");
+  });
+  $('.search').on( "click", function() {
+    $(".search-form-mobile").css("display", "block");
+  });
   $(".dropdown-trigger").on({
       mouseenter: function () {
         $(this).addClass("active");
@@ -54,4 +59,17 @@ $( document ).ready(function() {
        $(".hidden-nav").css("display", "none");
       }
   });
+
+
+  $(window).resize(function(){
+  	if ($(window).width() <= 460){
+  		$('.logo-img').attr('src', 'media/logo-mobile.jpg');
+      $('.branch').text('Branches');
+      $('.quote').text('Quote');
+      $('.check').text('Basket');
+  	}
+  });
+
+
+
 });

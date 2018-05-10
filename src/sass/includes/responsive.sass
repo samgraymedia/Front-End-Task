@@ -1,0 +1,64 @@
+.wrap
+  margin: 0 auto
+  width: 78%
+.dropdown-mobile
+  display: none
+.mobile-btn
+  display: none
+.search-form-mobile
+  display: none
+
+@media (max-width: 460px)
+  .mobile-btn
+    display: block
+  .main-nav
+    display: none
+  .info-nav
+    display: none
+  .search-form
+    display: none
+  .search-nav-flex
+    flex-flow: column
+    height: 138px
+    width: 100%
+  .search-nav .search-nav-flex .nav-btns
+    width: 100%
+    padding: 0 10px
+    img
+      height: 27px
+      width: 37px
+  .dropdown-mobile
+    background: white
+
+    ul
+      list-style: none
+      .title
+        font-size: 15px
+        color: #24546e
+      li
+        border-bottom: 1px solid #007ec4
+        padding: 13px 0
+        a
+          color: black
+          text-decoration: none
+  .search-form-mobile
+    position: relative
+    margin-top: 20px
+    input
+      width: 80%
+      height: 50px
+      border: 1px solid #007ec4
+      padding: 10px
+    button
+      position: absolute
+      height: 50px
+      width: 30%
+      background-color: #005e91
+      padding: 20px
+      display: flex
+      top: 0
+      left: 80%
+      align-items: center
+      justify-content: space-between
+      color: white
+      border: 1px solid #007ec4

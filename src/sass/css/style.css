@@ -11,61 +11,6 @@
 body {
   background: #e0e0e0; }
 
-.wrap {
-  margin: 0 auto;
-  width: 78%; }
-
-.grid-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%; }
-
-.col {
-  background-color: red;
-  height: 100px;
-  margin-bottom: 5px;
-  margin-left: 5px; }
-
-.col-1 {
-  width: 100%; }
-
-.col-2 {
-  width: calc(50% - 5px); }
-
-.col-3 {
-  width: calc(33.33% - 5px); }
-
-.col-4 {
-  width: calc(25% - 5px); }
-
-.col-5 {
-  width: calc(20% - 5px); }
-
-.col-6 {
-  width: calc(16.667% - 5px); }
-
-.col-7 {
-  width: calc(14.28% - 5px); }
-
-.col-8 {
-  width: calc(12.5% - 5px); }
-
-.col-9 {
-  width: calc(11.11% - 5px); }
-
-.col-10 {
-  width: calc(10% - 5px); }
-
-.col-11 {
-  width: calc(9.09% - 5px); }
-
-.col-12 {
-  width: calc(8.33% - 5px); }
-
-@media (max-width: 460px) {
-  .col {
-    width: 100%; } }
-
 .info-nav {
   display: flex;
   background: #fff; }
@@ -203,3 +148,70 @@ body {
         .dropdown .hidden-nav ul li a {
           text-decoration: none;
           color: black; }
+
+.wrap {
+  margin: 0 auto;
+  width: 78%; }
+
+.dropdown-mobile {
+  display: none; }
+
+.mobile-btn {
+  display: none; }
+
+.search-form-mobile {
+  display: none; }
+
+@media (max-width: 460px) {
+  .mobile-btn {
+    display: block; }
+  .main-nav {
+    display: none; }
+  .info-nav {
+    display: none; }
+  .search-form {
+    display: none; }
+  .search-nav-flex {
+    flex-flow: column;
+    height: 138px;
+    width: 100%; }
+  .search-nav .search-nav-flex .nav-btns {
+    width: 100%;
+    padding: 0 10px; }
+    .search-nav .search-nav-flex .nav-btns img {
+      height: 27px;
+      width: 37px; }
+  .dropdown-mobile {
+    background: white; }
+    .dropdown-mobile ul {
+      list-style: none; }
+      .dropdown-mobile ul .title {
+        font-size: 15px;
+        color: #24546e; }
+      .dropdown-mobile ul li {
+        border-bottom: 1px solid #007ec4;
+        padding: 13px 0; }
+        .dropdown-mobile ul li a {
+          color: black;
+          text-decoration: none; }
+  .search-form-mobile {
+    position: relative;
+    margin-top: 20px; }
+    .search-form-mobile input {
+      width: 80%;
+      height: 50px;
+      border: 1px solid #007ec4;
+      padding: 10px; }
+    .search-form-mobile button {
+      position: absolute;
+      height: 50px;
+      width: 30%;
+      background-color: #005e91;
+      padding: 20px;
+      display: flex;
+      top: 0;
+      left: 80%;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      border: 1px solid #007ec4; } }
