@@ -60,14 +60,27 @@ $( document ).ready(function() {
       }
   });
 
-
+  $(window).bind("load", function() {
+      var width = $(window).width();
+      if (width <= 460) {
+        $('.logo-img').attr('src', 'media/logo-mobile.jpg');
+        $('.branch').text('Branches');
+        $('.quote').text('Quote');
+        $('.check').text('Basket');
+      }
+  });
   $(window).resize(function(){
   	if ($(window).width() <= 460){
   		$('.logo-img').attr('src', 'media/logo-mobile.jpg');
       $('.branch').text('Branches');
       $('.quote').text('Quote');
       $('.check').text('Basket');
-  	}
+  	} else if ($(window).width() >= 460) {
+      $('.logo-img').attr('src', 'media/logo.jpg');
+      $('.branch').text('Find a Branch');
+      $('.quote').text('Get a Quote');
+      $('.check').text('Check out');
+    }
   });
 
 
