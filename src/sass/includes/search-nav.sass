@@ -10,10 +10,12 @@
       justify-content: flex-start
       width: 60%
       align-items: center
+      position: relative
       .logo
         width: 250px
         margin-right: 50px
       .search-form
+        position: relative
         input
           width: 342px
           height: 50px
@@ -21,7 +23,48 @@
           height: 50px
           width: 80px
           margin-left: -5px
+          background-color: #005e91
+          border: none
+          color: #fff
+          position: absolute
+          left: 347px
+          top: 0
     .nav-btns
       display: flex
       justify-content: space-between
       width: 20%
+      color: #f0f9fc
+      text-align: center
+.hidden-results
+  position: absolute
+  box-sizing: border-box
+  padding: 10px 10px 10px 20px
+  background-color: white
+  min-width: 567px
+  min-width: auto
+  top: 75px
+  left: 300px
+  display: none
+  .result
+    display: flex
+    height: 69px
+    margin: 20px 0
+    align-items: center
+  .flex-results-right
+    display: flex
+    button
+      margin: 0 10px
+      width: 77px
+      height: 30px
+      border: none
+      color: white
+      font-size: 13px
+    .quote
+      background: #00a6ff
+    .Basket
+      background: #005e91
+  .value
+    text-transform: capitalize
+    font-size: 13px
+  span
+    font-size: 11px

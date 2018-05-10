@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/script.min.js"></script>
   <title>SYDENHAMS</title>
 </head>
 <body>
@@ -26,24 +28,29 @@
           <img src="media/logo.png" alt="">
         </div>
         <form class="search-form" action="index.html" method="post">
-          <input type="text" name="" value="">
-          <button type="button" name="button">Find</button>
+          <input type="text" class="search" name="" value="">
+          <button type="button" name="button">
+            <img src="media/search.png" alt="">
+            Find
+          </button>
         </form>
+        <div class="hidden-results">
+        </div>
       </div>
     <div class="nav-btns">
     <div class="nav-btns-btn">
-      <img src="" alt="">
+      <img src="media/pin.png" alt="">
         <p>Find a Branch</p>
       </img>
     </div>
     <div class="nav-btns-btn">
-      <img src="" alt="">
+      <img src="media/pound.png" alt="">
         <p>Get a Quote</p>
       </img>
     </div>
     <div class="nav-btns-btn">
-      <img src="" alt="">
-        <p>Checkout</p>
+      <img src="media/cart.png" alt="">
+        <p>Check out</p>
       </img>
     </div>
   </div>
@@ -55,66 +62,8 @@
         <li><a href="">Home</a></li>
         <li><a href="">Building Materials</a></li>
         <li>
-          <a href="">Timber and Hardwood</a>
-          <div class="hidden-nav">
-            <ul>
-              <li class="">Sub Category Title</li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-            </ul>
-            <ul>
-              <li class="">Sub Category Title</li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-            </ul>
-            <ul>
-              <li class="">Sub Category Title</li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-            </ul>
-            <ul>
-              <li class="">Sub Category Title</li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
+          <a class="dropdown-trigger" href="#">Timber and Hardwood</a>
 
-            </ul>
-            <ul>
-              <li class="">Sub Category Title</li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-            </ul>
-            <ul>
-              <li class="">Sub Category Title</li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-              <li><a href="">Category Name</a></li>
-            </ul>
-          </div>
         </li>
         <li><a href="">Landscaping</a></li>
         <li><a href="">Kitchens and Bathrooms</a></li>
@@ -126,6 +75,71 @@
     </div>
 
   </nav>
+  <div class="dropdown">
+  <div class="wrap">
+    <nav class="hidden-nav">
+
+
+    <ul>
+      <li class="">Sub Category Title</li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+    </ul>
+    <ul>
+      <li class="">Sub Category Title</li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+    </ul>
+    <ul>
+      <li class="">Sub Category Title</li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+    </ul>
+    <ul>
+      <li class="">Sub Category Title</li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+
+    </ul>
+    <ul>
+      <li class="">Sub Category Title</li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+    </ul>
+    <ul>
+      <li class="">Sub Category Title</li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+      <li><a href="">Category Name</a></li>
+    </ul>
+      </nav>
+  </div>
+    </div>
 </header>
 </body>
 </html>

@@ -10,5 +10,33 @@
     a
       color: #fff
       text-decoration: none
-.hidden-nav
+      padding: 14px 10px 19px 10px
+      &:hover
+        background-color: #f0f9fc
+        padding: 14px 10px 19px 10px
+        border-top: 5px solid #00a6ff
+        color: #3c637a
+  .dropdown-trigger.active
+      background-color: #f0f9fc
+      padding: 14px 10px 19px 10px
+      border-top: 5px solid #00a6ff
+      color: #3c637a
+
+
+.dropdown
   display: none
+  background-color: #f0f9fc
+  padding: 25px 0
+  border-bottom: 1px solid #007ec4
+  .hidden-nav
+    display: none
+    width: 100%
+    justify-content: space-between
+    ul
+      list-style: none
+      li
+        margin: 15px 0
+        color: #24546e
+        a
+          text-decoration: none
+          color: black
